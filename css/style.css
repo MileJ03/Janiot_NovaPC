@@ -1,0 +1,560 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inter:wght@400;700&display=swap');
+
+/* ===== LAYOUT GENERAL ===== */
+html, body 
+{
+    height: 100%;
+}
+
+body 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+main 
+{
+    flex: 1;
+}
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    font-family: 'Inter', sans-serif;
+    background-color: #0f0c29; 
+    color: #fff;
+    line-height: 1.5;
+}
+
+/* ===== NAVBAR ===== */
+header 
+{
+    background-color: #1a1446;
+    padding: 20px 60px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo 
+{
+    display: flex; 
+    align-items: center; 
+}
+
+.logo img 
+{
+    height: 90px;
+    margin-right: 5px;
+}
+
+.navbar 
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.nav-links 
+{
+    list-style: none;
+    display: flex;
+    font-size: 2rem;
+    gap: 80px;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.nav-links > li
+{
+    background-color: #4b3ca5;
+    border-radius: 8px;
+    list-style: none; 
+    transition: background 0.3s;
+}
+
+.nav-links a 
+{
+    font-family: 'Goldman';
+    text-decoration:none;    
+    color: #fff;
+    display: flex; 
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background 0.3s;    
+}
+
+.nav-links > li:hover 
+{
+    background-color: #3d2fa3;
+}
+
+.dropdown 
+{
+    position: relative; 
+    padding: 10px 15px;
+}
+
+.dropdown-content 
+{
+    font-family: 'Inter', sans-serif;
+    position: absolute; 
+    top: 100%; 
+    left: 0;      
+    width: 100%;
+    background-color: #302472;  
+    z-index: 1001; 
+    padding: 10px 0;
+    border-radius: 0 0 8px 8px; 
+    list-style: none;    
+    flex-direction: column;
+    gap: 10px;
+    display: none; 
+}
+
+.dropdown-content li a 
+{
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block; 
+    font-size: 1.5rem; 
+    background-color: transparent; 
+    border-radius: 0; 
+}
+
+.dropdown-content li a:hover 
+{
+    background-color: #4b3ca5; 
+}
+
+.dropdown:hover .dropdown-content 
+{
+    display: flex; 
+}
+
+.dropdown > a 
+{
+    display: block;
+    line-height: 1;
+    padding: 10px 15px;
+    color: #fff;
+}
+
+/* ===== HERO ===== */
+.hero 
+{
+    text-align: center;
+    background-color: #2c1e78;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.hero h1 
+{
+    font-family: 'Goldman';
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+
+/* ===== PRODUCTOS ===== */
+section 
+{
+    margin: 30px 20px;
+}
+
+h2 
+{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.grid 
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px;
+}
+
+.gridperi 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px;
+}
+
+.gridindex 
+{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 15px;
+}
+
+.producto 
+{
+    background-color: #4b3ca5;
+    padding: 30px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.producto a 
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.producto:hover 
+{
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
+    background-color: #6451d1;
+}
+
+/* ===== AJUSTE DE PRODUCTOS CON IMÁGENES ===== */
+.producto-img 
+{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 6px;
+    background-color: #d3d3d3; 
+    margin-bottom: 10px;
+}
+
+.producto .nombre 
+{   
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 5px 0;
+    align-self: flex-start;
+}
+
+.producto .precio 
+{
+    font-family: 'Inter', sans-serif;
+    color: #ffcc00;
+    font-size: 1.3rem;
+    font-weight: 700;
+    align-self: flex-start;
+}
+
+/* ===== PÁGINA SOBRE NOSOTROS ===== */
+
+.sobrenosotros-wrapper 
+{
+    background-color: #4b3ca5; 
+    border-radius: 20px;
+    padding: 70px; 
+
+    display: flex;
+    gap: 50px; 
+    align-items: flex-start; 
+    width: 100%;
+}
+.sobrenosotros-content 
+{
+    max-width: 2000px; 
+    margin: 100px auto 40px auto;
+    padding: 20px;
+    
+    display: block;
+    gap: 40px;  
+}
+
+.info-logo-container 
+{
+    flex: 0 0 800px; 
+    max-width: 100%; 
+    
+    text-align: center; 
+    background-color: #7869e7;
+    border-radius: 12px;
+    padding: 2px;
+}
+
+.info-texto 
+{
+    flex: 1; 
+    font-size: 1.8rem;
+    line-height: 2;
+
+    padding: 0; 
+    background-color: transparent; 
+    box-shadow: none;
+}
+
+.info-texto p 
+{
+    margin-bottom: 20px; 
+    text-align: justify;
+}
+
+.info-logo 
+{
+    width: 100%; 
+    height: auto;
+    padding: 0; 
+ 
+    background-color: transparent;
+    border-radius: 0; 
+    box-shadow: none;
+}
+
+/* ===== PÁGINA DE CONTACTO ===== */
+
+.contacto-section 
+{
+    max-width: 1500px; 
+    margin: 80px auto; 
+    padding: 0 20px;
+    text-align: center; 
+}
+
+.contacto-titulo 
+{
+    font-family: 'Goldman';
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.contacto-form 
+{
+    background-color: #4b3ca5; 
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    align-items: center; 
+}
+
+.input-row 
+{
+    display: flex;
+    width: 100%; 
+    gap: 30px; 
+}
+
+.input-group 
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    text-align: left; 
+}
+
+.input-group label 
+{
+     font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.contacto-form input[type="text"],
+.contacto-form input[type="email"],
+.contacto-form input[type="tel"],
+.contacto-form textarea 
+{
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #d3d3d3; 
+    color: #333; 
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.contacto-form textarea 
+{
+    resize: none; 
+    height: 150px; 
+}
+
+.full-width 
+{
+    width: 100%;
+}
+
+.btn-enviar 
+{
+    font-family: 'Inter', sans-serif;
+    background-color: #3d2fa3; 
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px; 
+    transition: background-color 0.3s;
+    align-self: flex-center; 
+}
+
+.btn-enviar:hover 
+{
+    background-color: #4b3ca5; 
+}
+
+/* ===== FOOTER ===== */
+footer 
+{
+    background-color: #1a1446;
+    padding: 30px 60px;
+    margin-top: 3px;
+}
+
+.footer-content 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    color: #fff;
+    text-align: center; 
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p 
+{
+    margin: 6px 0;
+    font-size: 1rem;
+}
+
+.footer-content .col p:first-child 
+{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.footer-content .col 
+{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+/* ===== ESTILOS PARA LINKS DEL FOOTER ===== */
+
+.footer-content a,
+.footer-content a:visited 
+{
+    color: #fff; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+.footer-content a:hover 
+{
+    color: #6451d1; 
+    text-decoration: underline; 
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) 
+{
+    .navbar 
+    {
+        flex-direction: column;
+        gap: 20px; 
+    }
+    
+    .logo img 
+    {
+        height: 50px; 
+    }
+    
+    .nav-links 
+    {
+        flex-direction: column;
+        gap: 10px;
+        margin: 0; 
+    }    
+    
+    .nav-links 
+    {
+        font-size: 1.5rem;
+    }
+
+    .hero h1 
+    {
+        font-size: 1.5rem;
+    }
+
+    .dropdown-content 
+    {
+        position: static; 
+        display: none; 
+        min-width: auto;
+        padding: 0;
+    }
+
+    .grid 
+    {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    }
+
+    .sobrenosotros-content 
+    {
+        flex-direction: column;
+        gap: 30px;
+        margin: 20px 10px;
+        padding: 10px;
+    }
+    
+    .info-logo-container 
+    {
+        flex-basis: 90%; 
+    }
+
+    .contacto-form {
+        padding: 30px 20px;
+    }
+    
+    .input-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .btn-enviar {
+        align-self: center; 
+        width: 100%; 
+    }
+    
+    .contacto-section {
+        margin-top: 50px;
+    }
+
+}
