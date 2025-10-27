@@ -1,0 +1,207 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaPC - Promociones</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="image/png" href="img/Extras/NovaPC Gaming Logo.png">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                <img src="img/Extras/NovaPC Gaming Logo.png" alt="Logo NovaPC">
+                <img src="img/Extras/NovaPC Gaming Marca.png" alt="NovaPC">
+                </a>
+            </div>
+           <ul class="nav-links">
+    <li class="dropdown">
+        <a href="componentes.html">Componentes ▼</a>
+        <ul class="dropdown-content">
+            <li><a href="componentes/memoriasRAM.html">Memorias RAM</a></li>
+            <li><a href="componentes/motherboards.html">Motherboards</a></li>
+            <li><a href="componentes/procesadores.html">Procesadores</a></li>
+            <li><a href="componentes/placas-de-video.html">Placas de Video</a></li>
+            <li><a href="componentes/refrigeracion.html">Refrigeración</a></li>
+            <li><a href="componentes/fuentes.html">Fuentes</a></li>
+            <li><a href="componentes/discos.html">Discos</a></li>
+            <li><a href="componentes/gabinetes.html">Gabinetes</a></li>
+        </ul>
+    </li>
+    
+    <li class="dropdown">
+        <a href="perifericos.html">Periféricos ▼</a>   
+        <ul class="dropdown-content">
+            <li><a href="perfiericos/mouse.html">Mouse</a></li>
+            <li><a href="perfiericos/teclado.html">Teclado</a></li>
+            <li><a href="perfiericos/auriculares.html">Auriculares</a></li>
+            <li><a href="perfiericos/parlantes.html">Parlantes</a></li>
+            <li><a href="perfiericos/camaras.html">Cámaras</a></li>
+            <li><a href="perfiericos/volantes.html">Volantes</a></li>
+        </ul>
+    </li>
+
+    <li><a href="monitores.html">Monitores</a></li>
+    <li><a href="notebooks.html">Notebooks</a></li>
+    <li><a href="pcs-armadas.html">PCs Armadas</a></li>
+    </ul>
+        </nav>
+    </header>
+
+<main>
+        <section class="hero">
+            <h1> Promociones Exclusivas </h1>
+            <p>Selecciona tus productos y mirá cuánto ahorras.</p>
+        </section>
+
+        <section class="promociones-info">
+            <h2>Nuestras Ofertas</h2>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                
+                <div class="producto" id="promo-2x1">
+                    <h3>2da Unidad al 50%</h3>
+                    <p>Lleva dos unidades del mismo producto y en la segunda se aplica un *50% de descuento*.</p>
+                </div>
+
+                <div class="producto" id="promo-3x2">
+                    <h3>3x2 en Productos Seleccionados</h3>
+                    <p>Al comprar tres productos seleccionados, te regalamos el de menor valor.</p>
+                </div>
+
+                <div class="producto" id="promo-mayor">
+                    <h3>10% por Compra Grande</h3>
+                    <p>Obtene un *10% de descuento* adicional en el total de tu carrito si la suma supera los *$100.000*.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="seleccion-productos">
+            <h2>Tu carrito de compra</h2>
+            <div class="carrito-interactivo">
+                
+                <table id="productos-table">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio por unidad</th>
+                            <th>Cantidad</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-producto="A" data-precio="12500">
+                            <td>Memoria RAM 16GB HyperX</td>
+                            <td>$12.500</td>
+                            <td><input type="number" min="0" value="0" class="cantidad" onchange="calcularPromociones()"></td>
+                            <td class="subtotal">$0</td>
+                        </tr>
+                        <tr data-producto="B" data-precio="8000">
+                            <td>SSD 500GB Kingston</td>
+                            <td>$8.000</td>
+                            <td><input type="number" min="0" value="0" class="cantidad" onchange="calcularPromociones()"></td>
+                            <td class="subtotal">$0</td>
+                        </tr>
+                        <tr data-producto="C" data-precio="15000">
+                            <td>Ventilador RGB Cooler Master</td>
+                            <td>$15.000</td>
+                            <td><input type="number" min="0" value="0" class="cantidad" onchange="calcularPromociones()"></td>
+                            <td class="subtotal">$0</td>
+                        </tr>
+                        <tr data-producto="D" data-precio="50000">
+                            <td>PC Armada 6</td>
+                            <td>$50.000</td>
+                            <td><input type="number" min="0" value="0" class="cantidad" onchange="calcularPromociones()"></td>
+                            <td class="subtotal">$0</td>
+                        </tr>
+                        <tr data-producto="E" data-precio="5000">
+                            <td>Auriculares Logitech G Series G335</td>
+                            <td>$5.000</td>
+                            <td><input type="number" min="0" value="0" class="cantidad" onchange="calcularPromociones()"></td>
+                            <td class="subtotal">$0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p style="margin-top: 20px;">* La actualización del cálculo se realiza automáticamente al cambiar la cantidad.</p>
+        </section>
+
+        <section class="resultados-calculo">
+        <h2> Tu Ahorro y Total</h2>
+             <div class="contacto-form"> 
+             <div class="opciones-descuento">
+            <p>Elige tu promoción (solo se puede aplicar una a la vez):</p>
+            
+            <div id="opcion-2x1" style="display:none;"> 
+                <label>
+                    <input type="checkbox" id="check-2x1" class="promo-check"> 
+                    Aplicar 2da unidad al 50%
+                </label>
+            </div>
+            
+            <div id="opcion-3x2" style="display:none;">
+                <label>
+                    <input type="checkbox" id="check-3x2" class="promo-check"> 
+                    Aplicar 3x2 en productos seleccionados
+                </label>
+            </div>
+            
+            <div id="opcion-mayor" style="display:none;">
+                <label>
+                    <input type="checkbox" id="check-mayor" class="promo-check"> 
+                    Aplicar 10% por Gran Compra
+                </label>
+            </div>
+            
+            <hr class="separator-hr"> 
+        </div>
+            <p>Total sin Descuento: <strong id="total-sin-descuento">$0.00</strong></p>
+            <p>Descuento Aplicado: <strong id="descuento-aplicado">$0.00</strong></p>
+            <hr class="separator-hr"> 
+            <p class="contacto-titulo" style="font-size: 1.8rem; margin: 0; color: #ffcc00;">Total Final con Ahorro: <strong id="total-final">$0.00</strong></p>
+        
+            
+        </div>
+    </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+                <div class="col">
+                    <a href="sobrenosotros.html">
+                        <p>Sobre nosotros</p>
+                    </a>
+                </div>
+            <div class="col">
+                <a href="contacto.html">
+                    <p>¿Necesitás asesoramiento?<br>Contactate con nosotros!</p>
+                </a>
+            </div>
+            <div class="col">
+                <p>Nuestras redes</p>
+                <a href="#">
+                    <p>Instagram: @NovaPC</p>
+                </a>
+                <a href="#">
+                    <p>TikTok: NovaPC</p>
+                </a>
+                <a href="#">
+                    <p>Facebook: NovaPC</p>
+                </a>
+            </div>
+            <div class="col">
+                <p>Donde encontrarnos?</p>
+                    <a href="#.html">
+                        <p>AV.Lalala 123</p>
+                    </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/promociones.js"></script>
+    </body>
+</html>
