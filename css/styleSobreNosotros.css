@@ -66,28 +66,33 @@
 {
     .sobrenosotros-wrapper 
     {
-        flex-direction: column !important; 
-        padding: 30px 20px;     
-        gap: 20px;              
-        align-items: center;
+        display: flex;
+        flex-direction: column !important; /* Forzamos columna */
+        align-items: center; /* Centra los bloques (logo y texto) al medio */
+        padding: 30px 20px;
+        gap: 30px;
+        width: 100%; /* Aseguramos que no sea más ancho que la pantalla */
     }
 
     .info-logo-container 
     {
-        flex: none;          
-        width: 100%;      
-        max-width: 250px; 
-        margin: 0 auto;
+        flex: none; /* IMPORTANTE: Le quita el tamaño fijo de escritorio */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        max-width: 250px; /* Pero no dejes que se haga gigante */
+        margin: 0 auto; /* Centrado horizontalmente */
         padding: 0;
     }
 
     .info-texto 
     {
-        flex: none;
-        font-size: 1rem;  
-        line-height: 1.4;
-        width: 100%;
-        text-align: left; 
+        flex: none; /* IMPORTANTE: Le dice "dejá de calcular espacio flexible" */
+        width: 100%; /* Ocupa todo el ancho de la pantalla */
+        margin: 0;   /* Sacamos cualquier margen raro */
+        padding: 0;
+        
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: justify; /* O 'justify' si preferís bloques cuadrados */ 
     }
     
     .info-texto p 
@@ -100,5 +105,5 @@
         margin: 20px 10px;
         padding: 0;
     }
-
 }
+
