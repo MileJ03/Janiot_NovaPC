@@ -1,0 +1,287 @@
+/* MODO CLARO */
+
+/* 1. Fondo General y Texto Base */
+body.light-mode 
+{
+    background-color: #c9b8f5; 
+    color: #1a1446;
+}
+
+/* 2. Header y Navegación */
+body.light-mode header 
+{
+    background-color: #9575cd; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+body.light-mode .nav-links > li 
+{
+    background-color: #8a61d1; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+body.light-mode .nav-links > li:hover 
+{
+    background-color: #ffffff33;
+}
+
+body.light-mode .dropdown-content,
+body.light-mode .settings-dropdown 
+{
+    background-color: #8465b9;
+    border: 1px solid #9575cd;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+body.light-mode .dropdown-content li a,
+body.light-mode .settings-dropdown button 
+{
+    color: #fff; 
+    font-weight: 500;
+}
+
+body.light-mode .dropdown-content li a:hover,
+body.light-mode .settings-dropdown button:hover 
+{
+    background-color: #a27edf; 
+    border-color: #a27edf;
+    font-weight: 700;          
+}
+
+/* 3. Secciones Principales  */
+body.light-mode .hero,
+body.light-mode .promos-cta-banner,
+body.light-mode .promo-card,
+body.light-mode .sobrenosotros-wrapper,
+body.light-mode .info-logo-container,
+body.light-mode .contacto-form,
+body.light-mode .footer-content 
+{
+    background-color: #ede7f6; 
+    border: 1px solid #d1c4e9;
+    color: #1a1446;
+}
+
+body.light-mode .hero h1,
+body.light-mode h2,
+body.light-mode .contacto-titulo,
+body.light-mode .page-main-title, 
+body.light-mode .promo-card h1,
+body.light-mode .promo-card label,
+body.light-mode .contacto-form label, 
+body.light-mode .footer-content p,
+body.light-mode .footer-content a 
+{
+    color: #1a1446 !important; 
+}
+
+/* 4. Productos */
+body.light-mode .producto 
+{
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+body.light-mode .producto:hover 
+{
+    background-color: #f3e5f5;
+    box-shadow: 0 10px 20px rgba(103, 58, 183, 0.2);
+    transform: scale(1.02);
+}
+
+body.light-mode .producto .nombre 
+{
+    color: #302472;
+}
+
+body.light-mode .producto .precio 
+{
+    color: #907509; 
+    font-weight: 800;
+}
+
+/* 5. Botones y Enlaces Especiales */
+body.light-mode .cta-link 
+{
+    color: #907509; 
+    text-decoration: underline;
+}
+
+body.light-mode .btn-ofertas 
+{
+    border-color: #d8c161 !important;
+    color: #d8c161 !important;
+}
+
+body.light-mode .btn-ofertas:hover 
+{
+    background-color: #907509 !important;
+    color: #fff !important;
+}
+
+body.light-mode .btn-enviar,
+body.light-mode .btn-promo.primary,
+body.light-mode .settings-toggle 
+{
+    background-color: #7e57c2;
+    color: #fff;
+}
+
+body.light-mode .btn-enviar:hover,
+body.light-mode .btn-promo.primary:hover,
+body.light-mode .settings-toggle:hover 
+{
+    background-color: #5e35b1;
+}
+
+/* 6. Tablas (Carrito / Productos) */
+body.light-mode #productos-table thead 
+{
+    background-color: #b39ddb;
+    color: #fff;
+}
+
+body.light-mode #productos-table th, 
+body.light-mode #productos-table td 
+{
+    border-bottom: 1px solid #d1c4e9;
+    color: #1a1446;
+}
+
+body.light-mode #productos-table tbody tr:hover 
+{
+    background-color: #f3e5f5;
+}
+
+/* 7. Inputs y Formularios */
+body.light-mode input,
+body.light-mode select,
+body.light-mode textarea 
+{
+    background-color: #ffffff;
+    border: 1px solid #9575cd;
+    color: #333;
+}
+
+body.light-mode input:focus,
+body.light-mode textarea:focus 
+{
+    border-color: #673ab7;
+    box-shadow: 0 0 5px rgba(103, 58, 183, 0.3);
+}
+
+/* 8. Página de promociones */
+
+body.light-mode .page-main-title 
+{
+    color: #1a1446 !important;
+}
+
+body.light-mode .promos-cta-banner 
+{
+    background-color: #ede7f6;
+    border: 1px solid #d1c4e9;
+}
+
+body.light-mode .promo-card 
+{
+    background-color: #ffffff; 
+    border: 1px solid #b39ddb;
+    box-shadow: 0 5px 15px rgba(103, 58, 183, 0.15);
+    color: #1a1446;
+}
+
+body.light-mode .promo-card h1,
+body.light-mode .promo-desc,
+body.light-mode .promo-card label, 
+body.light-mode .result-label,
+body.light-mode .ahorro-text
+{
+    color: #1a1446 !important; 
+}
+
+body.light-mode .promo-card select, 
+body.light-mode .promo-card input 
+{
+    background-color: #f3e5f5; 
+    color: #1a1446;
+    border: 1px solid #9575cd;
+}
+
+body.light-mode .promo-list-container 
+{
+    background-color: #d1c4e9; 
+    border: 1px solid #9575cd; 
+}
+
+body.light-mode .promo-list li 
+{
+    color: #1a1446; 
+    border-bottom: 1px solid rgba(26, 20, 70, 0.1); 
+}
+
+body.light-mode .btn-promo.primary 
+{
+    background-color: #ffcc00 !important; 
+    color: #1a1446 !important;            
+    font-weight: bold;
+}
+body.light-mode .btn-promo.primary:hover 
+{
+    background-color: #e6b800 !important;
+}
+
+body.light-mode .promo-list-container h3 
+{
+    color: #7e57c2;
+}
+
+body.light-mode .promo-result 
+{
+    background-color: #ede7f6;
+    border: 1px solid #d1c4e9;
+}
+
+body.light-mode .result-value 
+{
+    color: #1a1446;
+}
+
+body.light-mode .btn-promo.secondary 
+{
+    background-color: #7e57c2;
+    color: #fff;
+}
+body.light-mode .btn-promo.secondary:hover
+{
+    background-color: #5e35b1;
+}
+
+/* 9. Footer  */
+
+body.light-mode footer 
+{
+    background-color: #9575cd; 
+    color: #fff;
+}
+
+body.light-mode .footer-content 
+{
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+body.light-mode .footer-content p,
+body.light-mode .footer-content a,
+body.light-mode .footer-content a:visited 
+{
+    color: #ffffff !important;
+}
+
+body.light-mode .footer-content a:hover 
+{
+    color: #ffcc00 !important; 
+    text-decoration: underline;
+}

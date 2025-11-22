@@ -168,7 +168,7 @@ header
     color: #fff;
 }
 
-/* ===== BOTÓN DE AJUSTES Y MENÚ (CORREGIDO) ===== */
+/* ===== BOTÓN DE AJUSTES Y MENÚ ===== */
 
 .settings-container 
 {
@@ -389,489 +389,6 @@ h2
     align-self: flex-start;
 }
 
-/* ===== ESTILOS PÁGINA DE PROMOCIONES ===== */
-
-.page-main-title 
-{
-    font-family: 'Goldman', sans-serif;
-    color: #fff; 
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 30px; 
-    max-width: 800px; 
-}
-
-.promo-section 
-{
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    padding: 40px 20px;
-}
-
-.promo-card 
-{
-    background-color: #4b3ca5; 
-    width: 100%;
-    max-width: 600px; 
-    border-radius: 15px;
-    padding: 40px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    height: 100%;
-}
-
-.promo-card h1 
-{
-    font-family: 'Goldman', sans-serif;
-    color: #fff;
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.promos-grid-container 
-{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 30px; 
-    width: 100%;
-    max-width: 1400px;
-}
-
-.promo-desc {
-    color: #e0e0e0;
-    text-align: center;
-    font-size: 1rem;
-    line-height: 1.4;
-    min-height: 45px;
-}
-
-.promo-inputs-row 
-{
-    display: flex;
-    gap: 20px;
-    width: 100%; 
-}
-
-.promo-card .input-group 
-{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    min-width: 0;
-}
-
-.promo-card .input-group.small 
-{
-    flex: 0.3; 
-    min-width: 80px; 
-}
-
-.promo-card label 
-{
-    font-family: 'Goldman', sans-serif;
-    color: #fff;
-    margin-bottom: 8px;
-    font-size: 1.1rem;
-}
-
-.promo-card select, 
-.promo-card input {
-    padding: 12px;
-    width: 100%; 
-    box-sizing: border-box;
-    border-radius: 8px;
-    border: none;
-    background-color: #d3d3d3; 
-    font-size: 1rem;
-    color: #333;
-    outline: none;
-}
-
-/* Botones */
-.btn-promo 
-{
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    font-family: 'Goldman', sans-serif;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: transform 0.2s, opacity 0.2s;
-    width: 100%;
-}
-
-.btn-promo:active { transform: scale(0.98); }
-
-.btn-promo.primary 
-{ 
-    background-color: #ffcc00; 
-    color: #1a1446;
-    font-weight: bold;
-    width: auto;
-    align-self: flex-start; 
-    padding: 10px 30px;
-}
-
-.promo-actions 
-{
-    display: flex;
-    gap: 15px;
-}
-
-.btn-promo.highlight
- { 
-    background-color: #ffcc00;
-    color: #1a1446;
-    font-weight: bold;
-}
-
-.btn-promo.secondary 
-{ 
-    background-color: #d3d3d3;
-    color: #333;
-}
-
-.promo-list-container 
-{
-    background-color: #302472; 
-    border-radius: 10px;
-    padding: 20px;
-    min-height: 100px;
-    max-height: 150px; 
-    overflow-y: auto;
-}
-
-.promo-list-container h3 
-{
-    font-family: 'Goldman', sans-serif;
-    color: #ffcc00;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.promo-list 
-{
-    list-style: none;
-    padding: 0;
-}
-
-.promo-list li 
-{
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    font-size: 0.95rem;
-}
-
-.empty-msg { color: #aaa; font-style: italic; }
-
-.promo-result 
-{
-    background-color: #d3d3d3; 
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.result-label 
-{
-    color: #333;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.result-value 
-{
-    color: #1a1446;
-    font-family: 'Goldman', sans-serif;
-    font-weight: 800;
-    font-size: 1.8rem;
-}
-
-.ahorro-text 
-{
-    text-align: center;
-    color: #ffcc00;
-    font-size: 1rem;
-    margin-top: -10px;
-}
-
-/* --- Tabla de Selección de Productos --- */
-
-.carrito-interactivo 
-{
-    width: 100%;
-    overflow-x: auto; 
-}
-
-#productos-table 
-{
-    width: 100%;
-    font-size: 1.2rem;
-    border-collapse: collapse; 
-    margin: 20px 0;
-    min-width: 600px; 
-}
-
-#productos-table thead 
-{
-    background-color: #3d2fa3; 
-    font-family: 'Goldman', sans-serif;
-    font-size: 1.6rem;
-}
-
-#productos-table th, #productos-table td 
-{
-    padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid #302472; 
-}
-
-#productos-table tbody tr:hover 
-{
-    background-color: #2c1e78; 
-}
-
-.cantidad 
-{
-    width: 70px; 
-    padding: 8px;
-    border-radius: 4px;
-    border: none;
-    background-color: #d3d3d3; 
-    color: #0f0c29; 
-    font-size: 1rem;
-    text-align: center;
-}
-
-.subtotal 
-{
-    font-weight: bold;
-    color: #ffcc00; 
-}
-
-/* --- Sección de Resultados --- */
-
-.resultados-calculo .contacto-form 
-{
-    max-width: 800px; 
-    margin: 30px auto;
-    padding: 40px;
-    text-align: left; 
-    gap: 10px;
-}
-
-.resultados-calculo .separator-hr 
-{
-    width: 100%;
-    margin: 10px 0;
-    border-color: rgba(255, 255, 255, 0.2);
-}
-
-.resultados-calculo p 
-{
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: space-between; 
-    width: 100%;
-    margin: 5px 0;
-}
-
-.resultados-calculo strong 
-{
-    font-family: 'Goldman', sans-serif;
-}
-
-.resultados-calculo #total-final 
-{
-    font-size: 2.2rem;
-    color: #ffcc00;
-}
-
-#mensaje-promocion 
-{
-    font-size: 1rem !important; 
-    font-style: italic;
-    color: #9c92ff; 
-    margin-top: 15px !important;
-    text-align: center; 
-    line-height: 1.3;
-}
-
-/* ===== PÁGINA SOBRE NOSOTROS ===== */
-
-.sobrenosotros-wrapper 
-{
-    background-color: #4b3ca5; 
-    border-radius: 20px;
-    padding: 70px; 
-
-    display: flex;
-    gap: 50px; 
-    align-items: flex-start; 
-    width: 100%;
-}
-.sobrenosotros-content 
-{
-    max-width: 2000px; 
-    margin: 100px auto 40px auto;
-    padding: 20px;
-    
-    display: block;
-    gap: 40px;  
-}
-
-.info-logo-container 
-{
-    flex: 0 0 800px; 
-    max-width: 100%; 
-    
-    text-align: center; 
-    background-color: #7869e7;
-    border-radius: 12px;
-    padding: 2px;
-}
-
-.info-texto 
-{
-    flex: 1; 
-    font-size: 1.8rem;
-    line-height: 2;
-
-    padding: 0; 
-    background-color: transparent; 
-    box-shadow: none;
-}
-
-.info-texto p 
-{
-    margin-bottom: 20px; 
-    text-align: justify;
-}
-
-.info-logo 
-{
-    width: 100%; 
-    height: auto;
-    padding: 0; 
- 
-    background-color: transparent;
-    border-radius: 0; 
-    box-shadow: none;
-}
-
-/* ===== PÁGINA DE CONTACTO ===== */
-
-.contacto-section 
-{
-    max-width: 1500px; 
-    margin: 80px auto; 
-    padding: 0 20px;
-    text-align: center; 
-}
-
-.contacto-titulo 
-{
-    font-family: 'Goldman';
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-    color: #fff;
-    text-align: center;
-}
-
-.contacto-form 
-{
-    background-color: #4b3ca5; 
-    padding: 50px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    
-    display: flex;
-    flex-direction: column;
-    gap: 20px; 
-    align-items: center; 
-}
-
-.input-row 
-{
-    display: flex;
-    width: 100%; 
-    gap: 30px; 
-}
-
-.input-group 
-{
-    display: flex;
-    flex-direction: column;
-    flex: 1; 
-    text-align: left; 
-}
-
-.input-group label 
-{
-     font-family: 'Inter', sans-serif;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 8px;
-    color: #fff;
-}
-
-.contacto-form input[type="text"],
-.contacto-form input[type="email"],
-.contacto-form input[type="tel"],
-.contacto-form textarea 
-{
-    font-family: 'Inter', sans-serif;
-    width: 100%;
-    padding: 15px;
-    font-size: 1.1rem;
-    border: none;
-    border-radius: 6px;
-    background-color: #d3d3d3; 
-    color: #333; 
-    outline: none;
-    transition: background-color 0.3s;
-}
-
-.contacto-form textarea 
-{
-    resize: none; 
-    height: 150px; 
-}
-
-.full-width 
-{
-    width: 100%;
-}
-
-.btn-enviar 
-{
-    font-family: 'Inter', sans-serif;
-    background-color: #3d2fa3; 
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 10px 40px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 10px; 
-    transition: background-color 0.3s;
-    align-self: flex-center; 
-}
-
-.btn-enviar:hover 
-{
-    background-color: #4b3ca5; 
-}
 
 /* ===== FOOTER ===== */
 footer 
@@ -945,294 +462,6 @@ footer
     
 }
 
-/* MODO CLARO */
-
-/* 1. Fondo General y Texto Base */
-body.light-mode 
-{
-    background-color: #c9b8f5; 
-    color: #1a1446;
-}
-
-/* 2. Header y Navegación */
-body.light-mode header 
-{
-    background-color: #9575cd; 
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-body.light-mode .nav-links > li 
-{
-    background-color: #8a61d1; 
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-body.light-mode .nav-links > li:hover 
-{
-    background-color: #ffffff33;
-}
-
-body.light-mode .dropdown-content,
-body.light-mode .settings-dropdown 
-{
-    background-color: #8465b9;
-    border: 1px solid #9575cd;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-body.light-mode .dropdown-content li a,
-body.light-mode .settings-dropdown button 
-{
-    color: #fff; 
-    font-weight: 500;
-}
-
-body.light-mode .dropdown-content li a:hover,
-body.light-mode .settings-dropdown button:hover 
-{
-    background-color: #a27edf; 
-    border-color: #a27edf;
-    font-weight: 700;          
-}
-
-/* 3. Secciones Principales  */
-body.light-mode .hero,
-body.light-mode .promos-cta-banner,
-body.light-mode .promo-card,
-body.light-mode .sobrenosotros-wrapper,
-body.light-mode .info-logo-container,
-body.light-mode .contacto-form,
-body.light-mode .footer-content 
-{
-    background-color: #ede7f6; 
-    border: 1px solid #d1c4e9;
-    color: #1a1446;
-}
-
-body.light-mode .hero h1,
-body.light-mode h2,
-body.light-mode .contacto-titulo,
-body.light-mode .page-main-title, 
-body.light-mode .promo-card h1,
-body.light-mode .promo-card label,
-body.light-mode .contacto-form label, 
-body.light-mode .footer-content p,
-body.light-mode .footer-content a 
-{
-    color: #1a1446 !important; 
-}
-
-/* 4. Productos */
-body.light-mode .producto 
-{
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-}
-
-body.light-mode .producto:hover 
-{
-    background-color: #f3e5f5;
-    box-shadow: 0 10px 20px rgba(103, 58, 183, 0.2);
-    transform: scale(1.02);
-}
-
-body.light-mode .producto .nombre 
-{
-    color: #302472;
-}
-
-body.light-mode .producto .precio 
-{
-    color: #907509; 
-    font-weight: 800;
-}
-
-/* 5. Botones y Enlaces Especiales */
-body.light-mode .cta-link 
-{
-    color: #907509; 
-    text-decoration: underline;
-}
-
-body.light-mode .btn-ofertas 
-{
-    border-color: #d8c161 !important;
-    color: #d8c161 !important;
-}
-
-body.light-mode .btn-ofertas:hover 
-{
-    background-color: #907509 !important;
-    color: #fff !important;
-}
-
-body.light-mode .btn-enviar,
-body.light-mode .btn-promo.primary,
-body.light-mode .settings-toggle 
-{
-    background-color: #7e57c2;
-    color: #fff;
-}
-
-body.light-mode .btn-enviar:hover,
-body.light-mode .btn-promo.primary:hover,
-body.light-mode .settings-toggle:hover 
-{
-    background-color: #5e35b1;
-}
-
-/* 6. Tablas (Carrito / Productos) */
-body.light-mode #productos-table thead 
-{
-    background-color: #b39ddb;
-    color: #fff;
-}
-
-body.light-mode #productos-table th, 
-body.light-mode #productos-table td 
-{
-    border-bottom: 1px solid #d1c4e9;
-    color: #1a1446;
-}
-
-body.light-mode #productos-table tbody tr:hover 
-{
-    background-color: #f3e5f5;
-}
-
-/* 7. Inputs y Formularios */
-body.light-mode input,
-body.light-mode select,
-body.light-mode textarea 
-{
-    background-color: #ffffff;
-    border: 1px solid #9575cd;
-    color: #333;
-}
-
-body.light-mode input:focus,
-body.light-mode textarea:focus 
-{
-    border-color: #673ab7;
-    box-shadow: 0 0 5px rgba(103, 58, 183, 0.3);
-}
-
-/* 8. Página de promociones */
-
-body.light-mode .page-main-title 
-{
-    color: #1a1446 !important;
-}
-
-body.light-mode .promos-cta-banner 
-{
-    background-color: #ede7f6;
-    border: 1px solid #d1c4e9;
-}
-
-body.light-mode .promo-card 
-{
-    background-color: #ffffff; 
-    border: 1px solid #b39ddb;
-    box-shadow: 0 5px 15px rgba(103, 58, 183, 0.15);
-    color: #1a1446;
-}
-
-body.light-mode .promo-card h1,
-body.light-mode .promo-desc,
-body.light-mode .promo-card label, 
-body.light-mode .result-label,
-body.light-mode .ahorro-text
-{
-    color: #1a1446 !important; 
-}
-
-body.light-mode .promo-card select, 
-body.light-mode .promo-card input 
-{
-    background-color: #f3e5f5; 
-    color: #1a1446;
-    border: 1px solid #9575cd;
-}
-
-body.light-mode .promo-list-container 
-{
-    background-color: #d1c4e9; 
-    border: 1px solid #9575cd; 
-}
-
-body.light-mode .promo-list li 
-{
-    color: #1a1446; 
-    border-bottom: 1px solid rgba(26, 20, 70, 0.1); 
-}
-
-body.light-mode .btn-promo.primary 
-{
-    background-color: #ffcc00 !important; 
-    color: #1a1446 !important;            
-    font-weight: bold;
-}
-body.light-mode .btn-promo.primary:hover 
-{
-    background-color: #e6b800 !important;
-}
-
-body.light-mode .promo-list-container h3 
-{
-    color: #7e57c2;
-}
-
-body.light-mode .promo-result 
-{
-    background-color: #ede7f6;
-    border: 1px solid #d1c4e9;
-}
-
-body.light-mode .result-value 
-{
-    color: #1a1446;
-}
-
-body.light-mode .btn-promo.secondary 
-{
-    background-color: #7e57c2;
-    color: #fff;
-}
-body.light-mode .btn-promo.secondary:hover
-{
-    background-color: #5e35b1;
-}
-
-/* 9. Footer  */
-
-body.light-mode footer 
-{
-    background-color: #9575cd; 
-    color: #fff;
-}
-
-body.light-mode .footer-content 
-{
-    background-color: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-}
-
-body.light-mode .footer-content p,
-body.light-mode .footer-content a,
-body.light-mode .footer-content a:visited 
-{
-    color: #ffffff !important;
-}
-
-body.light-mode .footer-content a:hover 
-{
-    color: #ffcc00 !important; 
-    text-decoration: underline;
-}
-
 
 /* ===== RESPONSIVE ===== */
 
@@ -1241,9 +470,8 @@ body.light-mode .footer-content a:hover
     /* --- NAVBAR Y HEADER --- */
     .navbar 
     {
-        flex-wrap: wrap;
-        justify-content: space-between;
         padding: 10px;
+        flex-wrap: wrap;
     }
     
     .logo 
@@ -1255,8 +483,10 @@ body.light-mode .footer-content a:hover
 
     .logo img 
     {
-        height: 50px; 
+        height: 30px; 
     }
+
+    .navbar { padding: 0; }
 
     .menu-toggle 
     {
@@ -1264,28 +494,15 @@ body.light-mode .footer-content a:hover
         background: none;
         border: 2px solid #fff;
         color: #fff;
-        font-size: 2rem;
+        font-size: 1.8rem;
         cursor: pointer;
         border-radius: 5px;
-        padding: 5px 10px;
+        padding: 4px 8px;
         margin-right: auto; 
         margin-left: 10px;
     }
     
-    .nav-links 
-    {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #1a1446;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        padding: 20px 0;
-        text-align: center;
-        z-index: 999; 
-        box-shadow: 0 10px 15px rgba(0,0,0,0.5);
-    }    
+    .nav-links { display: none; /* Se activa con JS */ }    
     
     .nav-links.active 
     {
@@ -1317,6 +534,31 @@ body.light-mode .footer-content a:hover
         background-color: #3d2fa3;
     }
 
+   /* --- GENERAL --- */
+    .hero h1 
+    {
+        font-size: 1.3rem;
+        line-height: 1.3;
+    }
+
+    .hero { padding: 25px 15px; }
+
+    h2 
+    {
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    /* Banner amarillo de oferta (El que se cortaba) */
+    .promos-cta-banner 
+    {
+        font-size: 0.9rem; /* Letra más chica */
+        padding: 15px 10px;
+        margin: 20px 10px;
+    }
+
+    .cta-link { font-size: 1.1rem; padding: 10px 20px; }
 
     .menu-toggle 
     {
@@ -1387,18 +629,15 @@ body.light-mode .footer-content a:hover
         padding: 8px 15px; 
     }
 
-    /* --- GENERAL --- */
-    .hero h1 
-    {
-        font-size: 1.5rem;
-    }
-
     /* --- PRODUCTOS (GRID GENERAL) --- */
     .grid, .gridperi 
     {
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-        gap: 10px; 
+        grid-template-columns: 1fr; 
+        gap: 25px;
+        padding: 0 10px; 
     }
+
+    section { margin: 30px 10px; }
 
     /* --- CARRUSEL INDEX --- */
     .gridindex 
@@ -1412,119 +651,76 @@ body.light-mode .footer-content a:hover
     }
     .gridindex::-webkit-scrollbar { display: none; }
 
+    /* --- 4. CARRUSEL DE NOVEDADES (EL PROBLEMA PRINCIPAL) --- */
+    
+    /* El contenedor padre necesita posición relativa para ubicar las flechas */
+    .carousel-wrapper 
+    {
+        position: relative;
+        padding: 0 5px; /* Un poquito de aire a los costados */
+    }
+
+    * El contenedor que se mueve */
+    .gridindex 
+    {
+        display: flex; 
+        overflow-x: hidden; /* Ocultamos la barra de scroll, usamos flechas */
+        scroll-behavior: smooth;
+        gap: 15px;
+        padding: 10px 0 20px 0;
+    }
+    .gridindex::-webkit-scrollbar { display: none; }
+
     .gridindex .producto 
     {
-        min-width: 260px;
-        width: 260px;     
-        flex-shrink: 0;   
-        margin-right: 15px; 
+        min-width: 240px; /* Ancho fijo ideal para celu */
+        max-width: 240px;
+        flex-shrink: 0;   /* ¡IMPORTANTE! Evita que se aplasten */
+        margin: 0 auto;
     }
 
     .arrow-btn 
     {
-        display: block;
-        background-color: rgba(0,0,0,0.5);
-        color: white;
-        border: none;
-        padding: 10px;
-        font-size: 1.5rem;
+        display: flex !important; /* Las forzamos a aparecer */
+        align-items: center;
+        justify-content: center;
+        
+        position: absolute; /* Posición absoluta respecto al wrapper */
+        top: 50%;
+        transform: translateY(-50%); /* Centradas verticalmente */
+        z-index: 10; /* Por encima de los productos */
+        
+        background-color: rgba(26, 20, 70, 0.8); /* Fondo oscuro semitransparente */
+        color: #ffcc00; /* Flecha amarilla */
+        border: 2px solid #ffcc00;
+        
+        width: 40px; /* Tamaño fijo chico */
+        height: 40px;
+        border-radius: 50%; /* Redondas */
+        font-size: 1.2rem;
         cursor: pointer;
-        z-index: 10;
-        border-radius: 50%;
-    }
-    
-    /* --- PÁGINA PROMOCIONES --- */
-    .promos-grid-container 
-    {
-        grid-template-columns: 1fr !important; 
-        gap: 20px;
-        padding: 0 10px;
+        padding: 0;
     }
 
-    .promo-card 
-    {
-        max-width: 100%; 
-        width: 100%;
-    }
-
-    .promo-inputs-row 
+    /* Flecha Izquierda (Usando tu clase del HTML) */
+    .left-btn 
     { 
-        flex-direction: column; 
-        gap: 10px; 
+        left: 5px;   /* Pegada a la izquierda */
+        right: auto; /* Anulamos cualquier derecha */
     }
-    
-    .btn-promo.primary 
+
+    /* Flecha Derecha (Usando tu clase del HTML) */
+    .right-btn 
     { 
-        width: 100%; 
-    }
-
-    .page-main-title 
-    {
-        font-size: 1.8rem;
-        margin-bottom: 20px;
-    }
-
-    /* --- PÁGINA SOBRE NOSOTROS --- */
-    .sobrenosotros-content 
-    {
-        flex-direction: column;
-        gap: 30px;
-        margin: 20px 10px;
-        padding: 10px;
-    }
-    
-    .info-logo-container 
-    {
-        flex-basis: 90%; 
-    }
-
-    /* --- CONTACTO --- */
-    .contacto-section 
-    {
-        margin-top: 50px;
-    }
-
-    .contacto-form 
-    {
-        padding: 30px 20px;
-    }
-    
-    .input-row 
-    {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .btn-enviar 
-    {
-        align-self: center; 
-        width: 100%; 
+        right: 5px;  /* Pegada a la derecha */
+        left: auto;  /* Anulamos cualquier izquierda */
     }
 
     /* --- FOOTER --- */
-    .footer-content 
-    {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .footer-content p, .footer-content a 
-    {
-        font-size: 0.9rem;
-    }
-    
-    .footer-content .col p:first-child 
-    {
-        font-size: 1.1rem;
-    }
+    footer { padding: 30px 20px; }
+    .footer-content { gap: 35px; }
 }
 
-@media (max-width: 1024px) 
-{
-    .promos-grid-container 
-    {
-        grid-template-columns: repeat(2, 1fr); 
-    }
-}
+
 
 

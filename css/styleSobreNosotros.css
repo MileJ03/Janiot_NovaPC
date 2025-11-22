@@ -1,0 +1,81 @@
+/* ===== PÁGINA SOBRE NOSOTROS ===== */
+
+.sobrenosotros-wrapper 
+{
+    background-color: #4b3ca5; 
+    border-radius: 20px;
+    padding: 70px; 
+
+    display: flex;
+    gap: 50px; 
+    align-items: flex-start; 
+    width: 100%;
+}
+.sobrenosotros-content 
+{
+    max-width: 2000px; 
+    margin: 100px auto 40px auto;
+    padding: 20px;
+    
+    display: block;
+    gap: 40px;  
+}
+
+.info-logo-container 
+{
+    flex: 0 0 800px; 
+    max-width: 100%; 
+    
+    text-align: center; 
+    background-color: #7869e7;
+    border-radius: 12px;
+    padding: 2px;
+}
+
+.info-texto 
+{
+    flex: 1; 
+    font-size: 1.8rem;
+    line-height: 2;
+
+    padding: 0; 
+    background-color: transparent; 
+    box-shadow: none;
+}
+
+.info-texto p 
+{
+    margin-bottom: 20px; 
+    text-align: justify;
+}
+
+.info-logo 
+{
+    width: 100%; 
+    height: auto;
+    padding: 0; 
+ 
+    background-color: transparent;
+    border-radius: 0; 
+    box-shadow: none;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) 
+{
+     /* --- PÁGINA SOBRE NOSOTROS --- */
+    .sobrenosotros-content 
+    {
+        flex-direction: column;
+        gap: 30px;
+        margin: 20px 10px;
+        padding: 10px;
+    }
+    
+    .info-logo-container 
+    {
+        flex-basis: 90%; 
+    }
+
+}
