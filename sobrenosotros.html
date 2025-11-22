@@ -12,43 +12,63 @@
     <!-- HEADER -->
     <header>
         <nav class="navbar">
+            
             <div class="logo">
                 <a href="index.html">
-                <img src="img/Extras/NovaPC Gaming Logo.png" alt="Logo NovaPC">
-                <img src="img/Extras/NovaPC Gaming Marca.png" alt="NovaPC">
+                    <img src="img/Extras/NovaPC Gaming Logo.png" alt="Logo NovaPC">
+                    <img src="img/Extras/NovaPC Gaming Marca.png" alt="NovaPC">
                 </a>
+                <button class="menu-toggle" aria-label="Abrir menú">☰</button>
             </div>
-           <ul class="nav-links">
-    <li class="dropdown">
-        <a href="componentes.html">Componentes ▼</a>
-        <ul class="dropdown-content">
-            <li><a href="componentes/memoriasRAM.html">Memorias RAM</a></li>
-            <li><a href="componentes/motherboards.html">Motherboards</a></li>
-            <li><a href="componentes/procesadores.html">Procesadores</a></li>
-            <li><a href="componentes/placas-de-video.html">Placas de Video</a></li>
-            <li><a href="componentes/refrigeracion.html">Refrigeración</a></li>
-            <li><a href="componentes/fuentes.html">Fuentes</a></li>
-            <li><a href="componentes/discos.html">Discos</a></li>
-            <li><a href="componentes/gabinetes.html">Gabinetes</a></li>
-        </ul>
-    </li>
-    
-    <li class="dropdown">
-        <a href="perifericos.html">Periféricos ▼</a>   
-        <ul class="dropdown-content">
-            <li><a href="perfiericos/mouse.html">Mouse</a></li>
-            <li><a href="perfiericos/teclado.html">Teclado</a></li>
-            <li><a href="perfiericos/auriculares.html">Auriculares</a></li>
-            <li><a href="perfiericos/parlantes.html">Parlantes</a></li>
-            <li><a href="perfiericos/camaras.html">Cámaras</a></li>
-            <li><a href="perfiericos/volantes.html">Volantes</a></li>
-        </ul>
-    </li>
 
-    <li><a href="monitores.html">Monitores</a></li>
-    <li><a href="notebooks.html">Notebooks</a></li>
-    <li><a href="pcs-armadas.html">PCs Armadas</a></li>
-</ul>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="componentes.html">Componentes ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="componentes/memoriasRAM.html">Memorias RAM</a></li>
+                        <li><a href="componentes/motherboards.html">Motherboards</a></li>
+                        <li><a href="componentes/procesadores.html">Procesadores</a></li>
+                        <li><a href="componentes/placas-de-video.html">Placas de Video</a></li>
+                        <li><a href="componentes/refrigeracion.html">Refrigeración</a></li>
+                        <li><a href="componentes/fuentes.html">Fuentes</a></li>
+                        <li><a href="componentes/discos.html">Discos</a></li>
+                        <li><a href="componentes/gabinetes.html">Gabinetes</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="perifericos.html">Periféricos ▼</a>   
+                    <ul class="dropdown-content">
+                        <li><a href="perfiericos/mouse.html">Mouse</a></li>
+                        <li><a href="perfiericos/teclado.html">Teclado</a></li>
+                        <li><a href="perfiericos/auriculares.html">Auriculares</a></li>
+                        <li><a href="perfiericos/parlantes.html">Parlantes</a></li>
+                        <li><a href="perfiericos/camaras.html">Cámaras</a></li>
+                        <li><a href="perfiericos/volantes.html">Volantes</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="monitores.html">Monitores</a></li>
+                <li><a href="notebooks.html">Notebooks</a></li>
+                <li><a href="pcs-armadas.html">PCs Armadas</a></li>
+                
+                <li>
+                    <a href="promociones.html" class="btn-ofertas">
+                        % OFERTAS
+                    </a>
+                </li>
+            </ul> <div class="settings-container">
+                <button id="btn-settings" class="settings-toggle" aria-label="Configuración">
+                    ⚙️ 
+                </button>
+                
+                <div id="settings-menu" class="settings-dropdown">
+                    <button id="btn-increase-font">Aumentar Letra (+)</button>
+                    <button id="btn-decrease-font">Disminuir Letra (-)</button>
+                    <button id="btn-theme-toggle">Modo Claro / Oscuro</button>
+                </div>
+            </div>
+
         </nav>
     </header>
 
@@ -102,5 +122,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

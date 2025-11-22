@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaPC - Promociones</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/promociones.js"></script>
 
     <link rel="icon" type="image/png" href="img/Extras/NovaPC Gaming Logo.png">
 </head>
@@ -11,162 +12,294 @@
     <!-- HEADER -->
     <header>
         <nav class="navbar">
+            
             <div class="logo">
                 <a href="index.html">
-                <img src="img/Extras/NovaPC Gaming Logo.png" alt="Logo NovaPC">
-                <img src="img/Extras/NovaPC Gaming Marca.png" alt="NovaPC">
+                    <img src="img/Extras/NovaPC Gaming Logo.png" alt="Logo NovaPC">
+                    <img src="img/Extras/NovaPC Gaming Marca.png" alt="NovaPC">
                 </a>
+                <button class="menu-toggle" aria-label="Abrir menú">☰</button>
             </div>
-           <ul class="nav-links">
-    <li class="dropdown">
-        <a href="componentes.html">Componentes ▼</a>
-        <ul class="dropdown-content">
-            <li><a href="componentes/memoriasRAM.html">Memorias RAM</a></li>
-            <li><a href="componentes/motherboards.html">Motherboards</a></li>
-            <li><a href="componentes/procesadores.html">Procesadores</a></li>
-            <li><a href="componentes/placas-de-video.html">Placas de Video</a></li>
-            <li><a href="componentes/refrigeracion.html">Refrigeración</a></li>
-            <li><a href="componentes/fuentes.html">Fuentes</a></li>
-            <li><a href="componentes/discos.html">Discos</a></li>
-            <li><a href="componentes/gabinetes.html">Gabinetes</a></li>
-        </ul>
-    </li>
-    
-    <li class="dropdown">
-        <a href="perifericos.html">Periféricos ▼</a>   
-        <ul class="dropdown-content">
-            <li><a href="perfiericos/mouse.html">Mouse</a></li>
-            <li><a href="perfiericos/teclado.html">Teclado</a></li>
-            <li><a href="perfiericos/auriculares.html">Auriculares</a></li>
-            <li><a href="perfiericos/parlantes.html">Parlantes</a></li>
-            <li><a href="perfiericos/camaras.html">Cámaras</a></li>
-            <li><a href="perfiericos/volantes.html">Volantes</a></li>
-        </ul>
-    </li>
 
-    <li><a href="monitores.html">Monitores</a></li>
-    <li><a href="notebooks.html">Notebooks</a></li>
-    <li><a href="pcs-armadas.html">PCs Armadas</a></li>
-    </ul>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="componentes.html">Componentes ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="componentes/memoriasRAM.html">Memorias RAM</a></li>
+                        <li><a href="componentes/motherboards.html">Motherboards</a></li>
+                        <li><a href="componentes/procesadores.html">Procesadores</a></li>
+                        <li><a href="componentes/placas-de-video.html">Placas de Video</a></li>
+                        <li><a href="componentes/refrigeracion.html">Refrigeración</a></li>
+                        <li><a href="componentes/fuentes.html">Fuentes</a></li>
+                        <li><a href="componentes/discos.html">Discos</a></li>
+                        <li><a href="componentes/gabinetes.html">Gabinetes</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="perifericos.html">Periféricos ▼</a>   
+                    <ul class="dropdown-content">
+                        <li><a href="perfiericos/mouse.html">Mouse</a></li>
+                        <li><a href="perfiericos/teclado.html">Teclado</a></li>
+                        <li><a href="perfiericos/auriculares.html">Auriculares</a></li>
+                        <li><a href="perfiericos/parlantes.html">Parlantes</a></li>
+                        <li><a href="perfiericos/camaras.html">Cámaras</a></li>
+                        <li><a href="perfiericos/volantes.html">Volantes</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="monitores.html">Monitores</a></li>
+                <li><a href="notebooks.html">Notebooks</a></li>
+                <li><a href="pcs-armadas.html">PCs Armadas</a></li>
+                
+                <li>
+                    <a href="promociones.html" class="btn-ofertas">
+                        % OFERTAS
+                    </a>
+                </li>
+            </ul> <div class="settings-container">
+                <button id="btn-settings" class="settings-toggle" aria-label="Configuración">
+                    ⚙️ 
+                </button>
+                
+                <div id="settings-menu" class="settings-dropdown">
+                    <button id="btn-increase-font">Aumentar Letra (+)</button>
+                    <button id="btn-decrease-font">Disminuir Letra (-)</button>
+                    <button id="btn-theme-toggle">Modo Claro / Oscuro</button>
+                </div>
+            </div>
+
         </nav>
     </header>
-
 <main>
-        <section class="promociones-header">
-            <h1> Promociones Exclusivas </h1>
-            <p>Seleccioná tus productos y mirá cuánto ahorras.</p>
-        </section>
+        <section class="promo-section">
+            
+            <h1 class="page-main-title">Calculá tu ahorro y aprovecha las promociones!</h1>
 
-        <section class="promociones-info">
-            <h2>Nuestras Ofertas</h2>
-            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-                
-                <div class="producto" id="promo-2x1">
-                    <h3>2da Unidad al 50%</h3>
-                    <p>Lleva dos unidades del mismo producto y en la segunda se aplica un 50% de descuento.</p>
+            <div class="promos-grid-container">
+
+                <div class="promo-card">
+                    <h2>2da unidad al 50% OFF</h2>
+                    <p class="promo-desc">Si llevás 2 unidades iguales, la segunda paga la mitad.</p>
+                    
+                    <div class="promo-inputs-row">
+                        <div class="input-group">
+                            <label>Elegí un producto</label>
+                            <select id="select-1">
+                                <option value="12500">Gigabyte Z790 ($12.500)</option>
+                                <option value="8000">WesternDigital PSsd Elements 1TB ($8.000)</option>
+                                <option value="50000">PC Armada 2 ($50.000)</option>
+                            </select>
+                        </div>
+                        <div class="input-group small">
+                            <label>Cant.</label>
+                            <input type="number" id="cant-1" value="1" min="1">
+                        </div>
+                    </div>
+                    <button onclick="agregar(1)" class="btn-promo primary">Añadir</button>
+                    
+                    <div class="promo-list-container">
+                        <ul id="list-1" class="promo-list"></ul>
+                    </div>
+
+                    <div class="promo-actions">
+                        <button onclick="calcular('promo50', 1)" class="btn-promo highlight">Calcular</button>
+                        <button onclick="limpiar(1)" class="btn-promo secondary">Limpiar</button>
+                    </div>
+                    
+                    <div class="promo-result">
+                        <span class="result-label">Total:</span>
+                        <span id="total-1" class="result-value">$0</span>
+                    </div>
+                    <p id="ahorro-1" class="ahorro-text"></p>
                 </div>
 
-                <div class="producto" id="promo-3x2">
-                    <h3>3x2 en Productos Seleccionados</h3>
-                    <p>Al comprar tres productos seleccionados, te regalamos el de menor valor.</p>
+                <div class="promo-card">
+                    <h2>3x2 en Seleccionados</h2>
+                    <p class="promo-desc">Llevando 3 unidades iguales, ¡la tercera es gratis!</p>
+                    
+                    <div class="promo-inputs-row">
+                        <div class="input-group">
+                            <label>Elegí un producto</label>
+                            <select id="select-2">
+                                <option value="5000">Logitech G Series G213 ($5.000)</option>
+                                <option value="15000">Asus WC Prime LC360 ($15.000)</option>
+                                <option value="2000">RedDragon ZeusX H510 ($2.000)</option>
+                            </select>
+                        </div>
+                        <div class="input-group small">
+                            <label>Cant.</label>
+                            <input type="number" id="cant-2" value="1" min="1">
+                        </div>
+                    </div>
+                    <button onclick="agregar(2)" class="btn-promo primary">Añadir</button>
+                    
+                    <div class="promo-list-container">
+                        <ul id="list-2" class="promo-list"></ul>
+                    </div>
+
+                    <div class="promo-actions">
+                        <button onclick="calcular('promo3x2', 2)" class="btn-promo highlight">Calcular</button>
+                        <button onclick="limpiar(2)" class="btn-promo secondary">Limpiar</button>
+                    </div>
+                    
+                    <div class="promo-result">
+                        <span class="result-label">Total:</span>
+                        <span id="total-2" class="result-value">$0</span>
+                    </div>
+                    <p id="ahorro-2" class="ahorro-text"></p>
                 </div>
 
-                <div class="producto" id="promo-mayor">
-                    <h3>10% por Compra Grande</h3>
-                    <p>Obtene un 10% de descuento adicional en el total de tu carrito si la suma supera los $100.000.</p>
+                <div class="promo-card">
+                    <h2>10% OFF Compra Grande</h2>
+                    <p class="promo-desc">Si tu carrito supera los $100.000, tenés 10% de descuento.</p>
+                    
+                    <div class="promo-inputs-row">
+                        <div class="input-group">
+                            <label>Elegí un producto</label>
+                            <select id="select-3">
+                                <option value="50000">PC Armada 6 ($50.000)</option>
+                                <option value="35000">Asus TUF Gaming 23.8' ($35.000)</option>
+                                <option value="90000">AMD Radeon RX 6600 8GB ($90.000)</option>
+                            </select>
+                        </div>
+                        <div class="input-group small">
+                            <label>Cant.</label>
+                            <input type="number" id="cant-3" value="1" min="1">
+                        </div>
+                    </div>
+                    <button onclick="agregar(3)" class="btn-promo primary">Añadir</button>
+                    
+                    <div class="promo-list-container">
+                        <ul id="list-3" class="promo-list"></ul>
+                    </div>
+
+                    <div class="promo-actions">
+                        <button onclick="calcular('promo100k', 3)" class="btn-promo highlight">Calcular</button>
+                        <button onclick="limpiar(3)" class="btn-promo secondary">Limpiar</button>
+                    </div>
+                    
+                    <div class="promo-result">
+                        <span class="result-label">Total:</span>
+                        <span id="total-3" class="result-value">$0</span>
+                    </div>
+                    <p id="ahorro-3" class="ahorro-text"></p>
                 </div>
 
-            </div>
-        </section>
+                <div class="promo-card">
+                    <h2>20% OFF con Mercado Pago</h2>
+                    <p class="promo-desc">Simulá pagando con MP. ¡Acumulás 20% OFF extra!</p>
+                    
+                    <div class="promo-inputs-row">
+                        <div class="input-group">
+                            <label>Elegí un producto</label>
+                            <select id="select-4">
+                                <option value="12500">Kingston HyperX DDR3 8GB ($12.500)</option>
+                                <option value="8000">Kignston Ssd Nvme 1TB ($8.000)</option>
+                                <option value="5000">Logitech G Series G502 ($5.000)</option>
+                            </select>
+                        </div>
+                        <div class="input-group small">
+                            <label>Cant.</label>
+                            <input type="number" id="cant-4" value="1" min="1">
+                        </div>
+                    </div>
+                    <button onclick="agregar(4)" class="btn-promo primary">Añadir</button>
+                    
+                    <div class="promo-list-container">
+                        <ul id="list-4" class="promo-list"></ul>
+                    </div>
 
-        <section class="seleccion-productos">
-            <h2>Tu carrito de compra</h2>
-            <div class="carrito-interactivo">
-                
-                <table id="productos-table">
-                    <thead>
-                        <tr>
-                            <th>Producto</th>
-                            <th>Precio por unidad</th>
-                            <th>Cantidad</th>
-                            <th>Subtotal</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr data-producto="A" data-precio="12500">
-                            <td>Memoria RAM 16GB HyperX</td>
-                            <td>$12.500</td>
-                            <td><input type="number" min="0" value="0" class="cantidad" onchange="calcularPromociones()"></td>
-                            <td class="subtotal">$0</td>
-                        </tr>
-                        <tr data-producto="B" data-precio="8000">
-                            <td>SSD 500GB Kingston</td>
-                            <td>$8.000</td>
-                            <td><input type="number" min="0" value="0" class="cantidad" onchange="calcularPromociones()"></td>
-                            <td class="subtotal">$0</td>
-                        </tr>
-                        <tr data-producto="C" data-precio="15000">
-                            <td>Ventilador RGB Cooler Master</td>
-                            <td>$15.000</td>
-                            <td><input type="number" min="0" value="0" class="cantidad" onchange="calcularPromociones()"></td>
-                            <td class="subtotal">$0</td>
-                        </tr>
-                        <tr data-producto="D" data-precio="50000">
-                            <td>PC Armada 6</td>
-                            <td>$50.000</td>
-                            <td><input type="number" min="0" value="0" class="cantidad" onchange="calcularPromociones()"></td>
-                            <td class="subtotal">$0</td>
-                        </tr>
-                        <tr data-producto="E" data-precio="5000">
-                            <td>Auriculares Logitech G Series G335</td>
-                            <td>$5.000</td>
-                            <td><input type="number" min="0" value="0" class="cantidad" onchange="calcularPromociones()"></td>
-                            <td class="subtotal">$0</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                    <div style="margin-top: 10px; display:flex; align-items:center; gap:10px;">
+                        <input type="checkbox" id="check-mp-4" style="width:20px; height:20px;">
+                        <label for="check-mp-4" style="margin:0; color:#fff;">Pagar con Mercado Pago</label>
+                    </div>
 
-            <p style="margin-top: 20px;">* La actualización del cálculo se realiza automáticamente al cambiar la cantidad.</p>
-        </section>
+                    <div class="promo-actions" style="margin-top:15px;">
+                        <button onclick="calcular('promoMP', 4)" class="btn-promo highlight">Calcular</button>
+                        <button onclick="limpiar(4)" class="btn-promo secondary">Limpiar</button>
+                    </div>
+                    
+                    <div class="promo-result">
+                        <span class="result-label">Total:</span>
+                        <span id="total-4" class="result-value">$0</span>
+                    </div>
+                    <p id="ahorro-4" class="ahorro-text"></p>
+                </div>
 
-        <section class="resultados-calculo">
-        <h2> Tu Ahorro y Total</h2>
-             <div class="contacto-form"> 
-             <div class="opciones-descuento">
-            <p>Elige tu promoción (solo se puede aplicar una a la vez):</p>
-            
-            <div id="opcion-2x1" style="display:none;"> 
-                <label>
-                    <input type="checkbox" id="check-2x1" class="promo-check"> 
-                    Aplicar 2da unidad al 50%
-                </label>
-            </div>
-            
-            <div id="opcion-3x2" style="display:none;">
-                <label>
-                    <input type="checkbox" id="check-3x2" class="promo-check"> 
-                    Aplicar 3x2 en productos seleccionados
-                </label>
-            </div>
-            
-            <div id="opcion-mayor" style="display:none;">
-                <label>
-                    <input type="checkbox" id="check-mayor" class="promo-check"> 
-                    Aplicar 10% por Gran Compra
-                </label>
-            </div>
-            
-            <hr class="separator-hr"> 
-        </div>
-            <p>Total sin Descuento: <strong id="total-sin-descuento">$0.00</strong></p>
-            <p>Descuento Aplicado: <strong id="descuento-aplicado">$0.00</strong></p>
-            <hr class="separator-hr"> 
-            <p class="contacto-titulo" style="font-size: 1.8rem; margin: 0; color: #ffcc00;">Total Final con Ahorro: <strong id="total-final">$0.00</strong></p>
-        
-            
-        </div>
-    </section>
+                <div class="promo-card">
+                    <h2>4x3 en Accesorios</h2>
+                    <p class="promo-desc">Llevando 4 periféricos iguales, solo pagás 3.</p>
+                    
+                    <div class="promo-inputs-row">
+                        <div class="input-group">
+                            <label>Elegí un periférico</label>
+                            <select id="select-5">
+                                <option value="1500">Gadnic M3 ($1.500)</option>
+                                <option value="3000">Logitech C922 ($3.000)</option>
+                                <option value="2500">Thonet&Vander Sb ($2.500)</option>
+                            </select>
+                        </div>
+                        <div class="input-group small">
+                            <label>Cant.</label>
+                            <input type="number" id="cant-5" value="1" min="1">
+                        </div>
+                    </div>
+                    <button onclick="agregar(5)" class="btn-promo primary">Añadir</button>
+                    
+                    <div class="promo-list-container">
+                        <ul id="list-5" class="promo-list"></ul>
+                    </div>
+
+                    <div class="promo-actions">
+                        <button onclick="calcular('promo4x3', 5)" class="btn-promo highlight">Calcular</button>
+                        <button onclick="limpiar(5)" class="btn-promo secondary">Limpiar</button>
+                    </div>
+                    
+                    <div class="promo-result">
+                        <span class="result-label">Total:</span>
+                        <span id="total-5" class="result-value">$0</span>
+                    </div>
+                    <p id="ahorro-5" class="ahorro-text"></p>
+                </div>
+
+                <div class="promo-card">
+                    <h2>15% OFF en Efectivo</h2>
+                    <p class="promo-desc">Descuento directo pagando en el local.</p>
+                    
+                    <div class="promo-inputs-row">
+                        <div class="input-group">
+                            <label>Elegí un producto</label>
+                            <select id="select-6">
+                                <option value="60000">Samsung Odyssey G3 24'($60.000)</option>
+                                <option value="25000">Noxi Zowi ($25.000)</option>
+                                <option value="10000">Corsair RM 100W ($10.000)</option>
+                            </select>
+                        </div>
+                        <div class="input-group small">
+                            <label>Cant.</label>
+                            <input type="number" id="cant-6" value="1" min="1">
+                        </div>
+                    </div>
+                    <button onclick="agregar(6)" class="btn-promo primary">Añadir</button>
+                    
+                    <div class="promo-list-container">
+                        <ul id="list-6" class="promo-list"></ul>
+                    </div>
+
+                    <div class="promo-actions">
+                        <button onclick="calcular('promoEfectivo', 6)" class="btn-promo highlight">Calcular</button>
+                        <button onclick="limpiar(6)" class="btn-promo secondary">Limpiar</button>
+                    </div>
+                    
+                    <div class="promo-result">
+                        <span class="result-label">Total:</span>
+                        <span id="total-6" class="result-value">$0</span>
+                    </div>
+                    <p id="ahorro-6" class="ahorro-text"></p>
+                </div>
+
+            </div> </section>
     </main>
 
 
@@ -202,6 +335,7 @@
             </div>
         </div>
     </footer>
-    <script src="js/promociones.js"></script>
+
+    <script src="js/script.js"></script>
     </body>
 </html>
