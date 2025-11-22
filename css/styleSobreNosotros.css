@@ -67,32 +67,32 @@
     .sobrenosotros-wrapper 
     {
         display: flex;
-        flex-direction: column !important; /* Forzamos columna */
-        align-items: center; /* Centra los bloques (logo y texto) al medio */
+        flex-direction: column !important; 
+        align-items: center; 
         padding: 30px 20px;
         gap: 30px;
-        width: 100%; /* Aseguramos que no sea más ancho que la pantalla */
+        width: 100%; 
     }
 
     .info-logo-container 
     {
-        flex: none; /* IMPORTANTE: Le quita el tamaño fijo de escritorio */
-        width: 100%; /* Ocupa todo el ancho disponible */
-        max-width: 250px; /* Pero no dejes que se haga gigante */
-        margin: 0 auto; /* Centrado horizontalmente */
+        flex: none;
+        width: 100%; 
+        max-width: 250px; 
+        margin: 0 auto; 
         padding: 0;
     }
 
     .info-texto 
     {
-        flex: none; /* IMPORTANTE: Le dice "dejá de calcular espacio flexible" */
-        width: 100%; /* Ocupa todo el ancho de la pantalla */
-        margin: 0;   /* Sacamos cualquier margen raro */
+        flex: none; 
+        width: 100%; 
+        margin: 0;   
         padding: 0;
         
         font-size: 1rem;
         line-height: 1.5;
-        text-align: justify; /* O 'justify' si preferís bloques cuadrados */ 
+        text-align: justify;
     }
     
     .info-texto p 
