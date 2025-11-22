@@ -66,22 +66,24 @@
 {
     .sobrenosotros-wrapper 
     {
-        flex-direction: column; 
+        flex-direction: column !important; 
         padding: 30px 20px;     
-        gap: 30px;              
+        gap: 20px;              
         align-items: center;
     }
 
     .info-logo-container 
     {
-        flex: 1;          
+        flex: none;          
         width: 100%;      
         max-width: 250px; 
         margin: 0 auto;
+        padding: 0;
     }
 
     .info-texto 
     {
+        flex: none;
         font-size: 1rem;  
         line-height: 1.4;
         width: 100%;
@@ -91,6 +93,12 @@
     .info-texto p 
     {
         margin-bottom: 15px;
+    }
+
+    .sobrenosotros-content 
+    {
+        margin: 20px 10px;
+        padding: 0;
     }
 
 }
