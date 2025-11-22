@@ -64,18 +64,33 @@
 
 @media (max-width: 768px) 
 {
-     /* --- PÁGINA SOBRE NOSOTROS --- */
-    .sobrenosotros-content 
+    .sobrenosotros-wrapper 
     {
-        flex-direction: column;
-        gap: 30px;
-        margin: 20px 10px;
-        padding: 10px;
+        flex-direction: column; 
+        padding: 30px 20px;     
+        gap: 30px;              
+        align-items: center;
     }
-    
+
     .info-logo-container 
     {
-        flex-basis: 90%; 
+        flex: 1;          
+        width: 100%;      
+        max-width: 250px; 
+        margin: 0 auto;
+    }
+
+    .info-texto 
+    {
+        font-size: 1rem;  
+        line-height: 1.4;
+        width: 100%;
+        text-align: left; 
+    }
+    
+    .info-texto p 
+    {
+        margin-bottom: 15px;
     }
 
 }
