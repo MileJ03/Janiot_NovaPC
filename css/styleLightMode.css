@@ -122,7 +122,8 @@ body.light-mode .btn-ofertas:hover
 
 body.light-mode .btn-enviar,
 body.light-mode .btn-promo.primary,
-body.light-mode .settings-toggle 
+body.light-mode .settings-toggle, 
+body.light-mode .settings-dropdown
 {
     background-color: #7e57c2;
     color: #fff;
@@ -284,4 +285,40 @@ body.light-mode .footer-content a:hover
 {
     color: #ffcc00 !important; 
     text-decoration: underline;
+}
+
+
+@media (max-width: 768px) 
+{
+    /* =============================== */
+    /*      MODO CLARO – MOBILE        */
+    /* =============================== */
+
+    body.light-mode .nav-links 
+    {
+        background-color: #9575cd; /
+    }
+    body.light-mode .nav-links a 
+    {
+        background-color: #8a61d1;   
+        color: #fff;                 
+    }
+    body.light-mode .nav-links a:hover 
+    {
+        background-color: #ffffff33; 
+    }
+
+    body.light-mode .nav-links .btn-ofertas 
+    {
+        background-color: #8a61d1;
+        border: 2px solid #d8c161; 
+        color: #d8c161;           
+    }
+
+    body.light-mode .nav-links .btn-ofertas:hover 
+    {
+        background-color: #907509; 
+        color: #fff;
+    }
+
 }
