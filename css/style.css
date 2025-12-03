@@ -203,7 +203,6 @@ header
     background-color: #3d2fa3;
 }
 
-/* El menú desplegable */
 .settings-dropdown 
 {
     display: none;     
@@ -219,7 +218,6 @@ header
     gap: 8px;
 }
 
-/* Clase para mostrarlo (JS la activa) */
 .settings-dropdown.show 
 {
     display: flex;
@@ -465,13 +463,7 @@ footer
     display: none;
 }
 
-.carousel-wrapper 
-{
-    position: relative;
-    display: flex;
-    align-items: center;
-    
-}
+
 
 
 /* ===== RESPONSIVE ===== */

@@ -290,9 +290,7 @@ body.light-mode .footer-content a:hover
 
 @media (max-width: 768px) 
 {
-    /* =============================== */
     /*      MODO CLARO – MOBILE        */
-    /* =============================== */
 
     body.light-mode .nav-links 
     {
